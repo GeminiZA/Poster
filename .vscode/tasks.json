@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: Build and Run Main",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-I",
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src/main.cpp",
+        "-o",
+        "${workspaceFolder}/build/main.exe",
+        "-lws2_32"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Build and Run Main Program"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: Build and Run Test",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-I",
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src/test.cpp",
+        "-o",
+        "${workspaceFolder}/build/test.exe",
+        "-lws2_32"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "detail": "Build and Run Test Program"
+    }
+  ]
+}
